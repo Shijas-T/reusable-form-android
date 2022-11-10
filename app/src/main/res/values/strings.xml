@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Check Out</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="checkout">Checkout</string>
+    <string name="order">Order</string>
+    <string name="shipping">Shipping</string>
+    <string name="payment">Payment</string>
+
+    <string-array name="country">
+        <item>United States</item>
+    </string-array>
+    <string-array name="state">
+        <item>San Francisco</item>
+        <item>NY</item>
+        <item>Florida</item>
+        <item>Texes</item>
+    </string-array>
+    <string-array name="city">
+        <item>Polo Alto</item>
+        <item>Harvey Point Suite</item>
+    </string-array>
+    <string-array name="zipCode">
+        <item>3012</item>
+        <item>49402</item>
+    </string-array>
+
+</resources>

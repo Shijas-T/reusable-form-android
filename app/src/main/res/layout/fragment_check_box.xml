@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    tools:context=".checkBoxFragment"
+    android:id="@+id/fragment_checkBox">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/checkout"
+        android:textSize="16sp"
+        android:id="@+id/tv_checkout"/>
+
+
+    <CheckBox
+        android:id="@+id/checkBox_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_checkout"
+        android:layout_marginStart="50dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_shipping"
+        android:layout_below="@+id/checkBox_shipping"
+        android:text="@string/shipping"
+        android:layout_marginStart="40dp"/>
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="120dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_checkout"
+        android:layout_marginStart="-22dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/checkBox_shipping"
+        android:background="@android:color/darker_gray" />
+
+    <CheckBox
+        android:id="@+id/checkBox_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_checkout"
+        android:layout_marginStart="90dp"
+        android:layout_toEndOf="@+id/checkBox_shipping" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_payment"
+        android:layout_below="@+id/checkBox_payment"
+        android:text="@string/payment"
+        android:layout_marginStart="177dp"/>
+    <View
+        android:id="@+id/line_2"
+        android:layout_width="119dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_checkout"
+        android:layout_marginStart="-25dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/checkBox_payment"
+        android:background="@android:color/darker_gray" />
+
+
+
+    <CheckBox
+        android:id="@+id/checkBox_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_checkout"
+        android:layout_toEndOf="@+id/checkBox_payment"
+        android:layout_marginStart="85dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_order"
+        android:layout_below="@+id/checkBox_order"
+        android:text="@string/order"
+        android:layout_marginStart="325dp"/>
+</RelativeLayout>
